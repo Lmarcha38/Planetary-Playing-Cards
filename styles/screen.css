@@ -1,9 +1,15 @@
+:root {
+    --cardColor: #5e548e;
+    --textColor: #EAE8FF;
+    --backgroundColor: #231942;
+}
+
 body {
     font-family: Helvetica, sans-serif;
-    color: #EAE8FF;
-    background: #2D3142;
+    color: var(--textColor);
+    background: var(--backgroundColor);
     padding: 0 40px;
-    text-align: center;
+    text-align: left;
 }
 
 nav {
@@ -47,4 +53,49 @@ h1 strong {
 
 img.about {
     opacity: 0.5;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+}
+
+.card_name {
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card_desc {
+    font-size: 1.4em;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 250px;
+    gap: 20px;
+    
+}
+
+.planet {
+    background: var(--cardColor);
+    border-radius: 5%;
+}
+
+.planet.sun {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.card_planet {
+    height: 50%;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: var(--textColor);
+    border-radius: 50%;
+    display: inline-block;
 }

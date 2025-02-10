@@ -3,5 +3,18 @@ layout: layout.liquid
 title: 11ty Boilerplate
 ---
 
-<h1>Yet Another 11ty <strong>Boilerplate</strong></h1>
-<img alt="pine" src="/images/pine.png" width="50" />
+<main>
+    <div class="planet sun">{% card 'Sun' 'Type G2V' '#ffe484' %}</div>
+    <div class="planet mercury">{% card 'Mercury' '0.39 AU' '#1a1a1a' %}</div>
+    <div class="planet venus">{% card 'Venus' '0.72 AU' '#e6e6e6' %}</div>
+    <div class="planet earth">{% card 'Earth' '1 AU' '#2f6a69' %}</div>
+    <div class="planet mars">{% card 'Mars' '1.52 AU' '#993d00' %}</div>
+    <div class="planet jupiter">{% card 'Jupiter' '5.2 AU' '#b07f35' %}</div>
+    <div class="planet saturn">{% card 'Saturn' '9.54 AU' '#b08f36' %}</div>
+    <div class="planet uranus">{% card 'Uranus' '19.2 AU' '#5580aa' %}</div>
+    <div class="planet neptune">{% card 'Neptune' '30.06 AU' '#366896' %}</div>
+</main>
+
+  <script>
+    ScrollReveal().reveal('.planet');
+  </script>
